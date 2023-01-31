@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,500;1,600&display=swap');
+
+@font-face {
+    font-family: "Norse";
+    src: url(Norse-Bold.otf);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: opensans, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: stretch;
+    font-size: 16px;
+}
+
+.logo-sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: clamp(25rem, 42rem, 48rem);
+    background-image: url(/img/leaves.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 16rem;
+    padding-bottom: .75rem;
+    color: white;
+}
+
+.logo-sidebar>footer,
+.logo-sidebar>footer>a {
+    font-weight: 200;
+    font-size: .8rem
+}
+
+.logo-sidebar>footer>a {
+    color: white;
+}
+
+.logo-sidebar>.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12.5rem;
+    padding: 0.1rem 3rem;
+    background-color: rgba(0, 0, 0, 0.4);
+
+}
+
+.logo-wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo-wrapper>p {
+    font-size: 9rem;
+    color: white;
+    font-family: Norse, sans-serif;
+    padding-top: 1.5rem;
+}
+
+.logo-image {
+    height: 80%;
+}
+
+.signup-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    flex: 1;
+}
+
+.blurb {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: #f9fafb;
+    padding: 3rem;
+    flex: 1;
+}
+
+.blurb>p {
+    width: clamp(20rem, 40rem, 50rem);
+    margin-top: 4rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.signup-form-wrapper {
+    padding: 3rem;
+    flex: 1;
+}
+
+.signup-form-wrapper>form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+}
+
+.signup-footer {
+    padding: 3rem;
+    background-color: #f9fafb;
+    flex: 1;
+}
+
+.signup-footer > input[type="submit"] {
+    background-color: #596D48;
+}
