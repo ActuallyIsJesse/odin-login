@@ -119,6 +119,7 @@ body {
     display: flex;
     flex-direction: column;
     text-transform: uppercase;
+    margin-bottom: 0.5rem;
     font-size: .8rem;
     font-weight: 600;
     color: #606060;
@@ -126,6 +127,7 @@ body {
 }
 
 .form-row > label > input {
+    margin-top: 0.5rem;
     width: 16rem;
     height: 2rem;
     padding: 0.5rem;
@@ -159,4 +161,9 @@ body {
     text-decoration: none;
     color: #596D48;
     font-weight: 600;
+}
+
+.error {
+    box-shadow:
+    0 0 5px 2px red;
 }
