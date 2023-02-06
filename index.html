@@ -18,7 +18,8 @@
                 <p>ODIN</p>
             </div>
         </div>
-        <footer class="footer">Photo by <a href="https://unsplash.com/photos/25xggax4bSA">Halie West</a> on <a href="https://unsplash.com/">Unsplash</a></footer>
+        <footer class="footer">Photo by <a href="https://unsplash.com/photos/25xggax4bSA">Halie West</a> on <a
+                href="https://unsplash.com/">Unsplash</a></footer>
     </div>
     <div class="signup-wrapper">
         <header class="blurb">
@@ -30,19 +31,24 @@
         <div class="signup-form-wrapper">
             <h1>Let's do this!</h1>
             <form action="" method="get" id="signupForm">
-                <label for="firstName">First Name<input type="text" id="firstName" name="firstName"></label>
-                <label for="lastName">Last Name<input type="text" id="lastName" name="lastName"></label>
-                <label for="email">Email<input type="email" id="email" name="email"></label>
-                <label for="tel">Telephone<input type="tel" id="tel" name="tel"></label>
-
-                <label for="password">Password<input type="text" id="password" name="password"></label>
-                <label for="confirmPassword">Confirm Password<input type="text" id="confirmPassword"
-                        name="confirmPassword">
-                </label>
+                <div class="form-row">
+                    <label for="firstName">First Name<input type="text" id="firstName" name="firstName"></label>
+                    <label for="lastName">Last Name<input type="text" id="lastName" name="lastName"></label>
+                </div>
+                <div class="form-row">
+                    <label for="email">Email<input type="email" id="email" name="email"></label>
+                    <label for="tel">Phone Number<input type="tel" id="tel" name="tel"></label>
+                </div>
+                <div class="form-row">
+                    <label for="password">Password<input type="password" id="password" name="password"></label>
+                    <label for="confirmPassword">Confirm Password<input type="password" id="confirmPassword"
+                            name="confirmPassword">
+                    </label>
+                </div>
             </form>
         </div>
         <div class="signup-footer">
-            <input type="submit" form="signupForm">
+            <input type="submit" form="signupForm" value="Create Account">
             <footer>Already have an account? <a href="#">Log in</a></footer>
         </div>
     </div>
