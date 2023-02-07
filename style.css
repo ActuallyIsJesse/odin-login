@@ -86,6 +86,7 @@ body {
     justify-content: flex-end;
     background-color: #f9fafb;
     padding: 3rem;
+    padding-bottom: 4rem;
     flex: 1;
 }
 
@@ -112,7 +113,7 @@ body {
 .form-row {
     display: flex;
     gap: 4rem;
-    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
 .form-row > label {
@@ -127,13 +128,18 @@ body {
 }
 
 .form-row > label > input {
-    margin-top: 0.5rem;
     width: 16rem;
     height: 2rem;
     padding: 0.5rem;
     border: solid #E5E7EB;
     font-size: 1rem;
     border-radius: .25rem;
+}
+
+.form-row > label > input:focus {
+    border: blue;
+    box-shadow: rgba(0, 0, 0, 0.2) 4px 4px 12px;
+
 }
 
 .signup-footer {
@@ -166,4 +172,9 @@ body {
 .error {
     box-shadow:
     0 0 5px 2px red;
+}
+
+.error-message {
+    color: red;
+    font-size: .8rem;
 }

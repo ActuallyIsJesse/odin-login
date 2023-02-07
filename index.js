@@ -1,19 +1,29 @@
-passwordInput = document.querySelector(".password-input");
-passwordConfirm = document.querySelector(".password-confirm");
+const passwordInput = document.querySelector(".password-input");
+const passwordConfirm = document.querySelector(".password-confirm");
+const passwordDiv = document.querySelector(".password-row");
+const errorWrapper = document.createElement('div')
+const error = document.createElement("p");
+error.textContent = "*Passwords do not match";
+error.classList.add('error-message');
+errorWrapper.appendChild(error);
+
+function comparePasswords(input1, input2) {
+    {
+        input1.classList.remove('error');
+        input2.classList.remove('error');
+        errorWrapper.remove();
+        if (input1.value !== input2.value) {
+            input1.classList.add('error');
+            input2.classList.add('error');
+            passwordDiv.after(errorWrapper);
+        }
+    }
+}
 
 passwordInput.addEventListener('input', () => {
-    passwordInput.classList.remove('error');
-    passwordConfirm.classList.remove('error');
-    if (passwordInput.value !== passwordConfirm.value) {
-        passwordInput.classList.add('error');
-        passwordConfirm.classList.add('error')
-    }
+ comparePasswords(passwordInput, passwordConfirm)
 });
-passwordConfirm.addEventListener('input', (e) => {
-    passwordInput.classList.remove('error');
-    passwordConfirm.classList.remove('error');
-    if (passwordInput.value !== passwordConfirm.value) {
-        passwordInput.classList.add('error');
-        passwordConfirm.classList.add('error')
-    }
+
+passwordConfirm.addEventListener('input', () => {
+    comparePasswords(passwordConfirm, passwordInput)
 });
